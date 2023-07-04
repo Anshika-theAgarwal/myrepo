@@ -1,0 +1,20 @@
+<h2>You have connected the following accounts with Influentia:</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+              <th>User Name</th>
+              <th>Subscription Name</th>
+              <th>Social Account Type</th>
+              <th>Login Id</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let account of  accounts">
+              <td>{{account.userName}}</td>
+              <td>{{account.subscriptionName}}</td>
+              <td>{{account.socialAccountType}}</td>
+              <td>{{account.loginId}}</td>
+              <td>{{account.encryptedPassword}}</td>
+            </tr>
+    </table>
